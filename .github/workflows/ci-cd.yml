@@ -78,7 +78,7 @@ jobs:
           docker rm -f nginx-proxy || true
           docker compose up -d nginx-proxy
 
-          if [ "\$STOP" != "none"]; then
+          if [ "\$STOP" != "none" ]; then
             docker stop \$STOP || true
           fi
           EOF
